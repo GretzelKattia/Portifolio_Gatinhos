@@ -1,7 +1,7 @@
 :root {
   --cor-primaria: #E8F7EE;
   --cor-secundaria: #3C362A;
-  --cor-terciaria: #BA7A8F;
+  --cor-terciaria: #bb6582;
   --cor-houver: #B8C4BB;
 
   --fonte-unica: "Madimi One", sans-serif;
@@ -25,11 +25,13 @@ body {
   color: var(--cor-secundaria);
   font-size: 14px;
   line-height: 1.5;
+  width: 100vw;
+  height: auto;
 }
 
 
 .cabecalho {
-  padding: 0% 1% 0% 15%;
+  padding: 2% 1% 0% 9%;
 
 }
 
@@ -55,7 +57,7 @@ body {
 }
 
 .apresentacao {
-  padding: 2.5% 15%;
+  padding: 0.5% 9%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -66,6 +68,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin: 30px 0px;
+
 }
 
 
@@ -74,7 +78,7 @@ body {
   font-family: var(--fonte-unica);
   font-weight: 400;
   font-style: normal;
-
+  color: #c46182;
   font-size: 40px;
 }
 
@@ -85,10 +89,10 @@ body {
 
 .apresentacao_conteudo_texto {
   font-family: var(--fonte-unica);
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
-
-  font-size: 20px;
+  font-size: 21px;
+  text-indent: 20px;
 
 
 }
@@ -159,12 +163,57 @@ gap: 10px;    //adiciona espaços iguais entre cada quadrado
 .rodape {
   color: var(--cor-primaria);
   background-color: var(--cor-houver);
-  padding: 24px;
+  padding: 12px;
   text-align: center;
 
   font-family: var(--fonte-unica);
   font-weight: 300;
   font-style: normal;
 
-  font-size: 24px;
+  font-size: 20px;
+}
+
+.gatinhos {
+  width: 600px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .cabecalho{
+       padding: 10%;  
+  }
+  .cabecalho__menu{
+    font-size: 100%;
+      justify-content: center;
+      align-items: center;
+
+  
+  }
+  .apresentacao{
+      flex-direction: column-reverse;
+      /* padding: 5%; */
+  }
+  .apresentacao__conteudo{
+      width: 100%;
+      margin-right: 0px;
+      /* width: auto; */
+  }
+
+  .apresentacao_conteudo_titulo {
+    font-size: 100%;
+  }
+
+  .apresentacao_conteudo_texto {
+    font-size: 100%;
+
+  }
+
+  .gatinhos {
+    width: 100%;
+    height: auto;
+  }
+
+  .rodape {
+    font-size: 100%;
+  }
 }
